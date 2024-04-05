@@ -4,7 +4,8 @@ export default function TodoList({
     todos,
     addTodo,
     completeTodo,
-    deleteTodo
+    deleteTodo,
+    editTodoText
 }) {
     return (
         <>
@@ -30,6 +31,7 @@ export default function TodoList({
                                 todo={todo}
                                 completeTodo={completeTodo}
                                 deleteTodo={deleteTodo}
+                                editTodoText={editTodoText}
                             />
                         )
                     })}
@@ -46,6 +48,7 @@ export default function TodoList({
                                 todo={todo}
                                 completeTodo={completeTodo}
                                 deleteTodo={deleteTodo}
+                                editTodoText={editTodoText}
                             />                            
                         )
                     })
